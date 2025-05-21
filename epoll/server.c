@@ -14,6 +14,7 @@
 #include <sys/epoll.h>
 #include <ctype.h>
 #define MAX_SIZE 5000
+
 char buf[BUFSIZ/2];
 char buf2[BUFSIZ];
 
