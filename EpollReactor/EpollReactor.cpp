@@ -146,6 +146,7 @@ typedef struct event{
 
     //添加文件描述符到红黑树
     void eventadd(int events, event * ev){
+        //采用ET模式
         events |= EPOLLET;
         struct epoll_event epv = { 0 , { 0 }};
         int op;
